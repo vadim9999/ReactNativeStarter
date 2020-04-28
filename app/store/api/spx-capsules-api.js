@@ -1,4 +1,4 @@
-const capsules = [
+const capsulesData = [
   {
     "capsule_serial": "C101",
     "capsule_id": "dragon1",
@@ -340,4 +340,4 @@ const capsules = [
   }
 ]
 
-export { capules }
+export { capsulesData }

@@ -4,3 +4,7 @@ export interface GetCapsulesSuccess {
   type: string;
   capsules: Capsule[];
 }
+
+export interface GetCapsules {
+  type: string;
+}

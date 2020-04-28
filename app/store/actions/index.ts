@@ -1,3 +1,3 @@
-import { getCapsulesSuccess } from './spx-capsules-action';
+import { getCapsulesSuccess, getCapsules } from './spx-capsules-action';
 
-export { getCapsulesSuccess };
+export { getCapsulesSuccess, getCapsules };

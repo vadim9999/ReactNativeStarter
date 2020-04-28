@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Button } from 'react-native';
 
-export const HomeScreen = ({ navigation, route }) => (
+export const HomeScreen: React.FC<{}> = ({ navigation, route }) => (
   <>
     <Button
       title="Go to Capsules"
