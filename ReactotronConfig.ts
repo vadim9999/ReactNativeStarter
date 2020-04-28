@@ -1,8 +1,10 @@
-import Reactotron from 'reactotron-react-native';
+import Reactotron, { ReactotronReactNative } from 'reactotron-react-native';
 import { reactotronRedux } from 'reactotron-redux';
 // import { AsyncStorage } from 'react-native';
 
-const reactotron = Reactotron.configure({ name: 'React Native Demo' })
+const reactotron: ReactotronReactNative = Reactotron.configure({
+  name: 'React Native Demo'
+})
   .use(reactotronRedux())
   .connect();
 
