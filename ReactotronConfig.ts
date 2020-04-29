@@ -1,15 +1,22 @@
 import Reactotron, { ReactotronReactNative } from 'reactotron-react-native';
 import { reactotronRedux } from 'reactotron-redux';
+import sagaPlugin from 'reactotron-redux-saga';
+
 // import { AsyncStorage } from 'react-native';
 
-const reactotron: ReactotronReactNative = Reactotron.configure({
+Reactotron.configure({
   name: 'React Native Demo'
-})
-  .use(reactotronRedux())
-  .connect();
+});
 
-export default reactotron;
+Reactotron.use(reactotronRedux());
+Reactotron.use(sagaPlugin());
 
+if (__DEV__) {
+  Reactotron.connect();
+  Reactotron.clear();
+}
+
+export default Reactotron;
 /* Reactotron.log({
   numbers: [1, 2, 3],
   boolean: false,

@@ -14,11 +14,10 @@ export const spxCapsulesReducer: Reducer<SPXCapsulesState> = (
   action
 ) => {
   switch (action.type) {
-    case GET_CAPSULES:
     case GET_CAPSULES_SUCCESS:
       return {
         ...state,
-        capsules: [...capsulesData]
+        capsules: [...action.capsules]
       };
     default:
       return { ...state };
