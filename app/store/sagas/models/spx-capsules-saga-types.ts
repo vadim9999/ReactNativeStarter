@@ -3,8 +3,7 @@ interface Missions {
   flight: number;
 }
 
-export interface Capsule {
-  id: string;
+export interface CapsuleResponse {
   capsule_serial: string;
   capsule_id: string;
   status: string;
